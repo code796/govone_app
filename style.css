@@ -1,0 +1,132 @@
+/* GovOne stylesheet */
+
+/* index.html (app shell) */
+:root{font-family:Arial,sans-serif;color:#1b1b1d;background:#eef1f4}*{box-sizing:border-box}body{margin:0;overflow-x:hidden}button,input,select,textarea{font:inherit}.hidden{display:none!important}
+    .intro{position:fixed;inset:0;z-index:50;background:#1b1b1d;display:grid;place-items:center}.intro video{width:100%;height:100%;object-fit:contain}.intro-brand{position:absolute;display:grid;place-items:center;color:#fff;font-size:clamp(22px,4vw,38px);font-weight:bold;text-shadow:0 2px 12px #0008}.intro-brand img{width:110px;height:110px;object-fit:contain;border-radius:25px}.skip{position:absolute;right:24px;bottom:24px;padding:11px 22px;border:1px solid #fff;border-radius:999px;background:#ffffffdd;color:#0f3d78;cursor:pointer}
+    .login{position:fixed;inset:0;z-index:45;display:grid;place-items:center;padding:16px;background:radial-gradient(circle at 12% 15%,#ffb37a66,transparent 42%),radial-gradient(circle at 85% 20%,#8bc0e399,transparent 45%),radial-gradient(circle at 30% 85%,#ff7ad966,transparent 45%),radial-gradient(circle at 90% 90%,#2f5fa399,transparent 50%),#eef1f4}.login-box{width:min(570px,calc(100% - 32px));padding:34px;border:1px solid #fff;background:#ffffffdd;border-radius:30px;box-shadow:0 20px 60px #0f3d7835}.login-logo{width:86px;height:86px;object-fit:contain;border-radius:18px}.login-box h1{margin:20px 0 15px;color:#0f3d78;font-size:clamp(30px,6vw,46px)}.login-box label{display:block;margin:14px 0;font-weight:bold;font-size:18px}.login-box input{display:block;width:100%;margin-top:6px;padding:13px;border:1px solid #aebfd0;border-radius:10px;background:#fff;color:#222}.register,.forgot,.primary{display:block;width:100%;padding:13px;border:0;border-radius:999px;background:#0f3d78;color:#fff;font-weight:bold;cursor:pointer}.forgot{margin:12px 0}.login-error{min-height:21px;color:#c62828;font-weight:bold}
+    .header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;background:#ffffffa6;color:#0f3d78;backdrop-filter:blur(18px);border-bottom:1px solid #fff;box-shadow:0 5px 25px #0f3d7818;position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px}.brand img{width:48px;height:48px;border-radius:16px;object-fit:contain}.brand strong{font-size:28px}.brand small{display:block;font-weight:bold}.header-right{display:flex;align-items:center;gap:8px}.search{display:flex;border:1px solid #0f3d7855;border-radius:999px;overflow:hidden;background:#ffffff70}.search input{width:0;padding:8px 0;border:0;background:transparent;color:#0f3d78;outline:0;transition:width .25s}.search:focus-within input{width:150px;padding:8px 6px 8px 10px}.search button,.icon-button{padding:8px;border:0;border-radius:999px;background:transparent;color:#0f3d78;cursor:pointer}.icon-button img{width:25px;height:25px;object-fit:contain;vertical-align:middle}.dropdown-wrap{position:relative}.dropdown{display:none;position:absolute;right:0;top:42px;min-width:210px;padding:8px;border-radius:18px;background:#fff;box-shadow:0 8px 25px #0004;z-index:20}.dropdown.open{display:block}.dropdown button{display:block;width:100%;padding:10px;border:0;border-radius:12px;background:#fff;text-align:left;cursor:pointer;color:#17324d}.version{display:none}
+    .content{padding:32px;max-width:1420px;margin:auto}.dashboard-title{color:#0f3d78;font-size:clamp(32px,5vw,62px)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:18px}.card{padding:22px;min-height:150px;border:1px solid #fff;border-radius:24px;background:#ffffffc9;color:#0f3d78;text-align:center;box-shadow:0 8px 25px #0f3d7816;cursor:pointer;transition:.2s}.card:hover{transform:translateY(-5px)}.card i{color:#2f5fa3}.notice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.notice,.faq,.portal-grid a{padding:16px;border:1px solid #fff;border-radius:20px;background:#ffffffc9;box-shadow:0 6px 20px #0f3d7812}.notice{cursor:pointer}.announcement{margin:24px 0;padding:20px;border:1px solid #2f5fa3;border-radius:22px;background:#dbeaf5;color:#0f3d78;line-height:1.6}.announcement b{font-size:20px}.portals{margin:32px 0}.portal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.portal-grid a,.bank-grid a{display:block;color:#0f3d78;text-decoration:none}.portal-grid small{display:block;margin-top:5px;color:#7d7d7d}.footer{padding:32px 7%;background:#0f3d78;color:#fff;text-align:left;line-height:1.7}.modal-backdrop{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:18px;background:#0008}.modal{position:relative;width:min(560px,100%);max-height:92vh;overflow:auto;padding:28px;border-radius:25px;background:#fff;color:#17324d}.close{position:absolute;right:12px;top:8px;border:0;background:transparent;font-size:28px;cursor:pointer}.modal label{display:block;margin:12px 0;font-weight:bold}.modal input,.modal select,.modal textarea{display:block;width:100%;margin-top:5px;padding:10px;border:1px solid #b7c6d9;border-radius:7px}.modal textarea{min-height:90px}.a11y-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.a11y-grid button{padding:18px;border:1px solid #ccd1dc;border-radius:12px;background:#fff;cursor:pointer}.bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.bank-grid a{padding:14px;border-radius:12px;background:#eef4f9}.govone-auth-row{display:flex;gap:10px;margin-top:12px}.govone-auth-row button{flex:1!important;margin:0!important}@media(max-width:850px){.header{align-items:flex-start}.brand strong{font-size:22px}.brand small{font-size:11px}.header-right{flex-wrap:wrap;justify-content:flex-end}.content{padding:20px}.govone-auth-row{flex-direction:column}}
+
+/* dashboard/landing (was injected by script.js) */
+.modal form{display:grid;gap:8px}.modal .primary{margin-top:8px}.modal .outline-message{padding:16px;border:2px solid #2f5fa3;border-radius:14px;background:#f4f9fd}.modal table{width:100%;border-collapse:collapse}.modal td,.modal th{padding:9px;border-bottom:1px solid #dce5ee;text-align:left;vertical-align:top}.modal .small-action{padding:7px 10px;border:0;border-radius:999px;background:#0f3d78;color:#fff;cursor:pointer}.govone-dark{background:#101923!important;color:#eef6ff!important}.govone-dark .card,.govone-dark .notice,.govone-dark .faq,.govone-dark .announcement,.govone-dark .portal-grid a{background:#1d2a38!important;color:#eef6ff!important}.govone-dark .header{background:#142331e8!important;color:#fff}.govone-dark .modal{background:#1d2a38;color:#fff}.large-text{font-size:118%!important}.high-contrast{filter:contrast(1.25)}
+
+/* about.html / understand.html */
+body{margin:0;padding:30px;background:#eef1f4;font:16px Arial;color:#0f3d78}.page{max-width:850px;margin:auto;padding:32px;background:#ffffffdd;border-radius:25px;box-shadow:0 12px 35px #0f3d7822}h1{font-size:42px}li{margin:10px 0}a{color:#0f3d78}.back{display:inline-block;margin-top:20px}
+
+/* feedback.html */
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#eef1f4;font:16px Arial;color:#0f3d78}.box{width:min(620px,calc(100% - 36px));padding:32px;border-radius:25px;background:#ffffffdd;box-shadow:0 12px 35px #0f3d7822}h1{font-size:42px}label{display:block;margin:14px 0;font-weight:bold}input,select,textarea{display:block;width:100%;box-sizing:border-box;margin-top:6px;padding:11px;border:1px solid #b7c6d9;border-radius:10px}textarea{min-height:120px}.primary{padding:12px 20px;border:0;border-radius:999px;background:#0f3d78;color:#fff;font-weight:bold;cursor:pointer}.success{margin-top:18px;color:#237a2b;font-weight:bold}.back{display:inline-block;margin-top:18px;color:#0f3d78}
+
+
+/* Recovered: landing / top-menu-panel / insight-grid / footer partner logos (was missing) */
+.govone-landing{min-height:100vh;background:linear-gradient(135deg,#fbfdff,#dceaf3 55%,#83b5d5);color:#1b1b1d}.govone-landing header{display:flex;align-items:center;justify-content:space-between;padding:18px 5%;background:#ffffffc7;backdrop-filter:blur(18px);position:sticky;top:0;z-index:5}.landing-brand{display:flex;gap:10px;align-items:center;font-size:24px;font-weight:bold;color:#0f3d78}.landing-brand img{width:46px;height:46px;object-fit:contain}.landing-nav{display:flex;gap:22px}.landing-nav a{color:#0f3d78;text-decoration:none}.landing-login,.landing-cta{border:0;border-radius:999px;padding:12px 22px;background:#0f3d78;color:#fff;font-weight:bold;cursor:pointer;text-decoration:none}.landing-hero{max-width:1250px;margin:auto;padding:105px 5% 55px}.landing-hero h1{margin:0;max-width:1000px;color:#0f3d78;font-size:clamp(54px,10vw,130px);line-height:.87;letter-spacing:-6px}.landing-hero p{max-width:570px;font-size:20px;line-height:1.5}.landing-preview,.landing-features{max-width:1250px;margin:auto;padding:0 5% 70px}.landing-preview video{width:100%;height:360px;object-fit:cover;border-radius:30px;background:#0f3d78;box-shadow:0 20px 55px #0f3d7830}.landing-features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.landing-feature{background:#ffffffbd;border-radius:24px;padding:24px;min-height:145px;box-shadow:0 8px 25px #0f3d7816}.landing-feature strong{display:block;font-size:24px;color:#0f3d78;margin-bottom:10px}.top-menu{position:relative}.top-menu-panel{display:none;position:absolute;left:0;top:44px;width:190px;padding:8px;border-radius:16px;background:#fff;box-shadow:0 8px 25px #0003}.top-menu-panel.open{display:block}.top-menu-panel button{display:block;width:100%;padding:10px;border:0;border-radius:10px;background:#fff;color:#0f3d78;text-align:left;cursor:pointer}.govone-auth-row{display:flex;gap:10px;margin:12px 0}.govone-auth-row button{flex:1!important;margin:0!important}.insight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:25px 0}.insight-box{padding:22px;border-radius:20px;background:#fff;box-shadow:0 8px 22px #0f3d7814}.insight-box strong{display:block;font-size:28px;color:#0f3d78}.v36-partners{display:flex;gap:25px;flex-wrap:wrap;margin-top:15px}.v36-partner-label{display:flex;align-items:center;gap:8px}.v36-partner-label img{width:36px;height:36px;object-fit:contain;background:#fff;border-radius:6px}@media(max-width:800px){.landing-nav{display:none}.landing-hero{padding-top:70px}.landing-features,.insight-grid{grid-template-columns:1fr}.landing-preview video{height:230px}.govone-auth-row{flex-direction:column}}
+/* ===== GovOne v1.0 redesign ===== */
+:root{--navy:#0f3d78;--blue:#2f5fa3;--sky:#8bc0e3;--mist:#eef1f4;--gray:#7d7d7d;--ink:#1b1b1d}
+.govone-landing header{border-radius:0 0 26px 26px}
+.landing-brand{font-weight:800;letter-spacing:-.5px}
+.landing-nav a{font-weight:600;padding:8px 6px;border-radius:999px;transition:background .2s}
+.landing-nav a:hover{background:#0f3d7812}
+.landing-login,.landing-cta{border-radius:999px;letter-spacing:.2px}
+.landing-hero{position:relative;background:radial-gradient(circle at 8% 20%,#ffb37a4d,transparent 40%),radial-gradient(circle at 92% 10%,#8bc0e373,transparent 42%),radial-gradient(circle at 40% 95%,#ff7ad94d,transparent 40%);border-radius:34px}
+.landing-hero h1{font-weight:800}
+.landing-features{grid-template-columns:repeat(3,1fr);background:#f7f9fb;border:1px solid #e4eaf0;border-radius:28px;padding:28px 5%}
+.landing-feature{background:#fff;border:1px solid #e9edf2;box-shadow:none;border-radius:20px}
+.landing-feature i{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#0f3d780f;color:var(--blue);margin-bottom:10px}
+.insight-box{border:1px solid #e6ebf0;box-shadow:none;border-radius:20px}
+.insight-box strong{font-size:32px}
+
+/* ===== v1.1 additions ===== */
+.badge-pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.4px;line-height:1.6}
+.version-pill{background:#0f3d781a;color:var(--navy)}
+.beta-pill{background:var(--blue);color:#fff}
+.release-notes{min-height:40px}
+
+/* Vio AI */
+.vio-btn{display:flex;align-items:center;gap:7px;padding:6px 14px 6px 6px;border:1px solid #0f3d7822;border-radius:999px;background:#0f3d780f;color:var(--navy);font-weight:700;cursor:pointer}
+.vio-circle{width:26px;height:26px;flex:none;display:block}
+.vio-circle img{width:100%;height:100%;object-fit:contain;display:block}
+.vio-panel-head .vio-circle{width:34px;height:34px}
+.vio-backdrop{position:fixed;inset:0;background:#0f3d7822;z-index:69;opacity:0;pointer-events:none;transition:opacity .25s}
+.vio-backdrop.open{opacity:1;pointer-events:auto}
+.vio-panel{position:fixed;top:0;right:0;height:100%;width:min(380px,92vw);background:#fff;z-index:70;box-shadow:-10px 0 35px #0f3d7830;transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column;padding:22px;gap:4px}
+.vio-panel.open{transform:translateX(0)}
+.vio-panel-head{display:flex;align-items:center;gap:10px}
+.vio-panel-head strong{flex:1;font-size:20px;color:var(--navy)}
+.vio-coming-soon{color:var(--blue);font-size:28px;font-weight:800;margin:16px 0}
+.vio-chat{flex:1;display:flex;flex-direction:column;border:1px solid #e4eaf0;border-radius:18px;padding:14px;gap:10px;background:#f7f9fb;min-height:0}
+.vio-chat-messages{flex:1}
+.vio-chat-input{display:flex;gap:8px}
+.vio-chat-input input{flex:1;padding:10px 14px;border-radius:999px;border:1px solid #d7e0e8;background:#fff}
+.vio-chat-input button{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:var(--navy);color:#fff;cursor:not-allowed}
+.vio-chat-controls{display:flex;gap:10px;margin-top:14px;justify-content:center}
+.vio-ctrl{width:40px;height:40px;border-radius:50%;border:1px solid #e4eaf0;background:#fff;color:var(--navy);cursor:not-allowed}
+@media(max-width:850px){.vio-btn span+*{display:none}}
+
+/* Start Page background + font */
+.govone-landing{background:url('start-bg.jpg') center/cover no-repeat fixed;color:#fff;font-family:'Plus Jakarta Sans',Arial,sans-serif}
+.landing-hero{background:none}
+.landing-hero h1{color:#fff}
+.landing-hero p{color:#e7eef7}
+.landing-stats{margin:0 5% 70px;max-width:1250px}
+.insight-box,.landing-feature{color:#1b1b1d}
+
+.mobile-icon{vertical-align:middle;margin:0 4px;color:#1b1b1d}
+.announcement + .announcement{margin-top:0}
+
+/* PAN Card / Driving License forms */
+.field-error{display:block;margin-top:4px;color:#c62828;font-size:13px;font-weight:600}
+.field-hint{display:block;margin-top:4px;color:#7d7d7d;font-size:12px;font-weight:400}
+.form-note{margin:0 0 4px;padding:10px 12px;border-radius:12px;background:#eef6ff;color:#17324d;font-size:13px}
+.modal [aria-invalid=true]{border-color:#c62828}
+.govone-dark .form-note{background:#17324d;color:#fff}
+
+/* ===== Explore India Section ===== */
+.explore-india{margin:32px 0;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 6px 25px #0f3d7814}
+.explore-india-title{text-align:center;font-size:clamp(26px,4vw,36px);font-weight:800;color:#1b1b1d;margin:28px 0 20px;letter-spacing:-.5px;position:relative;display:inline-block;left:50%;transform:translateX(-50%)}
+.explore-india-title span{position:relative;display:inline-block}
+.explore-india-title span::after{content:'';display:block;height:4px;border-radius:2px;background:#e53935;margin-top:4px}
+.explore-india-body{display:grid;grid-template-columns:1fr 1fr;height:380px}
+.explore-india-slider-wrap{position:relative;overflow:hidden;background:#222;height:100%}
+.explore-india-slider{position:relative;width:100%;height:100%}
+.explore-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .55s ease}
+.explore-slide.active{opacity:1}
+.explore-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:#ffffffcc;border:none;border-radius:50%;width:38px;height:38px;font-size:24px;line-height:1;cursor:pointer;color:#0f3d78;box-shadow:0 2px 8px #0003;transition:background .2s}
+.explore-arrow:hover{background:#fff}
+.explore-prev{left:12px}
+.explore-next{right:12px}
+.explore-india-grid{background:#3D52D5;display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:22px}
+.explore-india-card{background:#4361EE;border:1px solid #ffffff25;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:22px 14px;color:#fff;text-align:center;cursor:pointer;transition:background .2s,transform .15s;text-decoration:none}
+.explore-india-card:hover{background:#5472f5;transform:translateY(-3px)}
+.explore-india-card i{font-size:2rem}
+.explore-india-card span{font-size:15px;font-weight:700;line-height:1.3}
+@media(max-width:750px){.explore-india-body{grid-template-columns:1fr;height:auto}.explore-india-slider-wrap{height:240px}.explore-india-grid{grid-template-columns:1fr 1fr;gap:10px;padding:16px}}
+
+/* ===== MyGov Connect Section ===== */
+.mygov-connect{margin:28px 0;padding:28px 30px;background:#fff;border-radius:24px;box-shadow:0 6px 25px #0f3d7814}
+.mygov-connect-head{margin-bottom:20px}
+.mygov-connect-title{margin:0 0 8px;font-size:clamp(22px,3vw,30px);font-weight:800;color:#0f3d78}
+.mygov-connect-title span{color:#e53935}
+.mygov-connect-title i{font-size:.85em;opacity:.8}
+.mygov-connect-sub{margin:0;color:#555;font-size:15px;line-height:1.5}
+.mygov-connect-cards{display:grid;grid-template-columns:1fr 220px;gap:20px;align-items:start}
+.mygov-blog-card{display:flex;gap:16px;text-decoration:none;color:inherit;border:1px solid #e4eaf0;border-radius:18px;overflow:hidden;transition:box-shadow .2s,transform .2s;background:#f7f9fb}
+.mygov-blog-card:hover{box-shadow:0 8px 28px #0f3d7822;transform:translateY(-3px)}
+.mygov-blog-card img{width:200px;min-height:140px;object-fit:cover;flex:none}
+.mygov-blog-info{padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:7px}
+.mygov-blog-tag{display:inline-block;padding:3px 10px;background:#0f3d7815;color:#0f3d78;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.4px;align-self:flex-start}
+.mygov-blog-info strong{font-size:15px;color:#1b1b1d;line-height:1.35}
+.mygov-blog-info p{margin:0;font-size:13px;color:#666;line-height:1.5}
+.mygov-blog-read{margin-top:auto;font-size:13px;font-weight:700;color:#0f3d78}
+.mygov-connect-links{display:flex;flex-direction:column;gap:10px}
+.mygov-link-btn{display:flex;align-items:center;gap:9px;padding:12px 16px;border-radius:14px;background:#eef4fb;color:#0f3d78;text-decoration:none;font-weight:600;font-size:14px;transition:background .2s,transform .15s}
+.mygov-link-btn:hover{background:#dbeaf5;transform:translateX(3px)}
+.mygov-link-btn i{width:16px;text-align:center;opacity:.8}
+@media(max-width:750px){.mygov-connect-cards{grid-template-columns:1fr}.mygov-blog-card{flex-direction:column}.mygov-blog-card img{width:100%;min-height:180px}.mygov-blog-info{padding:14px}.mygov-connect-links{flex-direction:row;flex-wrap:wrap}}
+
+/* ===== Updated Notification Cards ===== */
+.notice{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:all .2s ease;min-height:64px}
+.notice:hover{transform:translateY(-3px);box-shadow:0 10px 25px #0f3d7820;background:#ffffff}
+.notice b{font-size:15px;color:#0f3d78;line-height:1.4}
+.notice-arrow{color:#2f5fa3;opacity:.5;font-size:13px;transition:all .2s;flex-shrink:0}
+.notice:hover .notice-arrow{opacity:1;transform:translateX(3px)}
+.govone-dark .notice b{color:#eef6ff!important}
+.govone-dark .notice-arrow{color:#8bc0e3!important}

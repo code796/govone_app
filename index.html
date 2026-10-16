@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GovOne</title>
+  <link rel="icon" href="govone-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="intro" class="intro"><video id="intro-video" autoplay muted playsinline preload="auto"><source src="GovOne Intro.mp4" type="video/mp4"></video><div class="intro-brand"><img src="govone-logo.png" alt="GovOne logo"><span>Welcome to GovOne</span></div><button id="skip" class="skip">Skip Intro</button></section>
+  <section id="login" class="login"><form id="login-form" class="login-box"><img class="login-logo" src="govone-logo.png" alt="GovOne logo"><h1>Login to GovOne</h1><p>Use your GovOne account to continue.</p><label>Username<input name="username" placeholder="Enter username" required></label><label>Password<input name="password" type="password" placeholder="Enter password" required></label><p id="login-error" class="login-error"></p><button id="register" class="register" type="button">Register</button><button id="forgot" class="forgot" type="button">Forgot Password</button><button class="primary" type="submit">Login</button></form></section>
+  <main id="app" class="hidden">
+    <header class="header"><div class="brand"><img src="govone-logo.png" alt="GovOne logo"><div><strong>GovOne</strong><small>Public Services. Simply Connected.</small></div></div><div class="header-right"><form id="search" class="search"><input name="q" placeholder="Search" aria-label="Search"><button aria-label="Search"><i class="fa fa-search"></i></button></form><button id="vio-ai" class="vio-btn" aria-label="Open Vio AI"><span class="vio-circle"><img src="vio-ai-logo.png" alt="Vio AI"></span>Vio AI</button><button id="language" class="icon-button" aria-label="Language"><img src="globe.png" alt="Language"></button><button id="accessibility" class="icon-button" aria-label="Accessibility"><img src="accessibility.png" alt="Accessibility"></button><span class="version"></span><div class="dropdown-wrap"><button class="icon-button" data-menu="settings" aria-label="Settings"><i class="fa fa-gear"></i></button><div id="settings" class="dropdown"><button data-action="account">Account Settings</button><button data-action="security">Security</button><button data-action="privacy">Privacy and Data</button></div></div><div class="dropdown-wrap"><button class="icon-button" data-menu="profile" aria-label="Account"><i class="fa fa-user-circle"></i></button><div id="profile" class="dropdown"><button data-action="profile">View Profile</button><button data-action="logout">Logout</button></div></div></div></header>
+    <div class="content"><section id="cards" class="cards"><div class="card" data-action="insights"><i class="fa fa-chart-line fa-2x"></i><h3>My Insights</h3></div><div class="card" data-action="services"><i class="fa fa-briefcase fa-2x"></i><h3>Applications</h3></div><div class="card" data-action="grievance"><i class="fa fa-circle-exclamation fa-2x"></i><h3>Complaints</h3></div><div class="card" data-action="schemes"><i class="fa fa-building-columns fa-2x"></i><h3>Schemes</h3></div><div class="card" data-action="passport"><i class="fa fa-passport fa-2x"></i><h3>Passport</h3></div><div class="card" data-action="cyber"><i class="fa fa-shield-halved fa-2x"></i><h3>Cyber Guidelines</h3></div><div class="card" data-action="banking"><i class="fa fa-building-columns fa-2x"></i><h3>Banking</h3></div><div class="card" data-action="news"><i class="fa fa-newspaper fa-2x"></i><h3>News</h3></div></section><section class="portals"><h2 data-i18n="Indian Government Portals">Indian Government Portals</h2><div class="portal-grid"><a href="https://www.nic.in/" target="_blank">NIC<small data-i18n="National Informatics Centre">National Informatics Centre</small></a><a href="https://www.meity.gov.in/" target="_blank">MeitY<small data-i18n="Ministry of Electronics & IT">Ministry of Electronics & IT</small></a><a href="https://www.india.gov.in/" target="_blank">India.gov.in<small data-i18n="National Portal of India">National Portal of India</small></a><a href="https://www.digilocker.gov.in/" target="_blank">DigiLocker<small data-i18n="Digital documents">Digital documents</small></a><a href="https://www.mygov.in/" target="_blank">MyGov<small data-i18n="Citizen participation">Citizen participation</small></a><a href="https://uidai.gov.in/" target="_blank">UIDAI<small data-i18n="Aadhaar services">Aadhaar services</small></a><a href="https://pgportal.gov.in/" target="_blank" rel="noopener">CPGRAMS<small data-i18n="Public grievance redress">Public grievance redress</small></a><a href="https://rtionline.gov.in/" target="_blank" rel="noopener">RTI Online<small data-i18n="Right to Information">Right to Information</small></a><a href="https://www.passportindia.gov.in/" target="_blank" rel="noopener">Passport Seva<small data-i18n="Passport services">Passport services</small></a><a href="https://voters.eci.gov.in/" target="_blank" rel="noopener">NVSP<small data-i18n="Voters' service portal">Voters' service portal</small></a><a href="https://parivahan.gov.in/" target="_blank" rel="noopener">Parivahan Sewa<small data-i18n="Licences &amp; vehicle services">Licences &amp; vehicle services</small></a><a href="https://eshram.gov.in/" target="_blank" rel="noopener">e-Shram<small data-i18n="Unorganised workers' registry">Unorganised workers' registry</small></a><a href="https://www.incometax.gov.in/" target="_blank" rel="noopener">Income Tax e-Filing<small data-i18n="Tax returns &amp; refunds">Tax returns &amp; refunds</small></a><a href="https://www.gst.gov.in/" target="_blank" rel="noopener">GST Portal<small data-i18n="GST registration &amp; returns">GST registration &amp; returns</small></a><a href="https://www.jansamarth.in/" target="_blank" rel="noopener">Jan Samarth<small data-i18n="Government credit schemes">Government credit schemes</small></a><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">NCS<small data-i18n="National Career Service">National Career Service</small></a><a href="https://scholarships.gov.in/" target="_blank" rel="noopener">National Scholarship Portal<small data-i18n="Scholarship schemes">Scholarship schemes</small></a><a href="https://swayam.gov.in/" target="_blank" rel="noopener">SWAYAM<small data-i18n="Free online courses">Free online courses</small></a><a href="https://abha.abdm.gov.in/" target="_blank" rel="noopener">ABHA (ABDM)<small data-i18n="Digital health ID">Digital health ID</small></a><a href="https://www.cowin.gov.in/" target="_blank" rel="noopener">CoWIN<small data-i18n="Vaccination records">Vaccination records</small></a><a href="https://pmkisan.gov.in/" target="_blank" rel="noopener">PM-Kisan<small data-i18n="Farmer income support">Farmer income support</small></a><a href="https://enam.gov.in/" target="_blank" rel="noopener">e-NAM<small data-i18n="National agriculture market">National agriculture market</small></a><a href="https://gem.gov.in/" target="_blank" rel="noopener">GeM<small data-i18n="Government e-Marketplace">Government e-Marketplace</small></a><a href="https://www.startupindia.gov.in/" target="_blank" rel="noopener">Startup India<small data-i18n="Startup resources &amp; benefits">Startup resources &amp; benefits</small></a></div></section><h2 id="notices">Notifications 🔔</h2><section class="notice-grid"></section><section class="explore-india">
+  <h2 class="explore-india-title">Explore <span>India</span></h2>
+  <div class="explore-india-body">
+    <div class="explore-india-slider-wrap">
+      <button class="explore-arrow explore-prev" aria-label="Previous image">&#8249;</button>
+      <div class="explore-india-slider">
+        <img src="explore-india-1.png" alt="Taj Mahal, Agra" class="explore-slide active">
+        <img src="explore-india-2.jpg" alt="Living Root Bridge, Meghalaya" class="explore-slide">
+        <img src="explore-india-3.png" alt="Ladakh Stupas" class="explore-slide">
+        <img src="explore-india-4.jpg" alt="Nainital Lake, Uttarakhand" class="explore-slide">
+        <img src="explore-india-5.png" alt="Golden Temple, Amritsar" class="explore-slide">
+        <img src="explore-india-6.jpg" alt="Dwarkadheesh Temple, Gujarat" class="explore-slide">
+      </div>
+      <button class="explore-arrow explore-next" aria-label="Next image">&#8250;</button>
+    </div>
+    <div class="explore-india-grid">
+      <a class="explore-india-card" href="https://travelindiatourism.com/" target="_blank" rel="noopener">
+        <i class="fa fa-plane-departure fa-2x"></i>
+        <span>Travel &amp; Tourism</span>
+      </a>
+      <a class="explore-india-card" href="https://www.india.gov.in/explore-india/culinary-delights?pagenumber=4" target="_blank" rel="noopener">
+        <i class="fa fa-bowl-food fa-2x"></i>
+        <span>Culinary Delight</span>
+      </a>
+      <a class="explore-india-card" href="https://www.india.gov.in/explore-india/odop" target="_blank" rel="noopener">
+        <i class="fa fa-wheat-awn fa-2x"></i>
+        <span>One District<br>One Product</span>
+      </a>
+      <a class="explore-india-card" href="https://www.originaltravel.co.uk/travel-guide/india/fun-facts" target="_blank" rel="noopener">
+        <i class="fa fa-hands-praying fa-2x"></i>
+        <span>Facts of India</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MyGov Connect Section -->
+<section class="mygov-connect">
+  <div class="mygov-connect-head">
+    <h2 class="mygov-connect-title"><i class="fa fa-users"></i> MyGov <span>Connect</span></h2>
+    <p class="mygov-connect-sub">Stay informed with the latest updates, blogs and campaigns from MyGov — the citizen engagement platform of the Government of India.</p>
+  </div>
+  <div class="mygov-connect-cards">
+    <a class="mygov-blog-card" href="https://www.mygov.in/group-issue/pm-gatishakti-integrated-planning-viksit-bharat-inviting-suggestions-national-transport" target="_blank" rel="noopener">
+      <img src="mygov-blog-img.png" alt="PM GatiShakti – Integrated Planning for Viksit Bharat">
+      <div class="mygov-blog-info">
+        <span class="mygov-blog-tag">Featured Blog</span>
+        <strong>PM GatiShakti – Integrated Planning for Viksit Bharat</strong>
+        <p>Inviting suggestions on the National Transport Master Plan. Share your ideas to shape India's future infrastructure.</p>
+        <span class="mygov-blog-read">Read on MyGov ↗</span>
+      </div>
+    </a>
+    <div class="mygov-connect-links">
+      <a href="https://www.mygov.in/" target="_blank" rel="noopener" class="mygov-link-btn"><i class="fa fa-globe"></i> MyGov Home</a>
+      <a href="https://www.mygov.in/campaigns/" target="_blank" rel="noopener" class="mygov-link-btn"><i class="fa fa-bullhorn"></i> Campaigns</a>
+      <a href="https://www.mygov.in/home/blog" target="_blank" rel="noopener" class="mygov-link-btn"><i class="fa fa-newspaper"></i> All Blogs</a>
+      <a href="https://www.mygov.in/group/polls-surveys/" target="_blank" rel="noopener" class="mygov-link-btn"><i class="fa fa-chart-bar"></i> Polls &amp; Surveys</a>
+    </div>
+  </div>
+</section>
+<section class="announcement"><b data-i18n="New Services Coming Soon!">New Services Coming Soon!</b><br><span data-i18n="We are gradually rolling out advanced features in our next major update. Stay tuned for a more seamless and integrated service experience!">We are gradually rolling out advanced features in our next major update. Stay tuned for a more seamless and integrated service experience!</span></section><section class="announcement"><b>Coming Soon for <svg class="mobile-icon" viewBox="0 0 24 40" width="16" height="27" aria-hidden="true"><rect x="1" y="1" width="22" height="38" rx="5" fill="currentColor"/><rect x="3.5" y="8" width="17" height="21" fill="#fff"/><rect x="8" y="4" width="8" height="1.6" rx=".8" fill="#fff"/><circle cx="12" cy="34" r="2.2" fill="#fff"/></svg> Mobile Devices</b><br><span>This app is currently under development for supporting your favourite Mobile Devices, whether it's iOS or Android.</span></section><h2 id="faqs">FAQs</h2><details class="faq"><summary>How can I track my application?</summary><p>Open Applications or Files to review your submissions.</p></details><button id="ask-more" class="primary">More Queries</button></div>
+    <footer class="footer">Copyright © 2026 <b>GovOne</b> Unified Public Services Platform. All Rights Reserved.<br>Supported Browsers: Google Chrome, Safari(Apple), Microsoft Edge, Opera, Brave, DuckDuckGo, FireFox, Vivaldi and All AI Browsers. Supported on Mac and GoogleBook devices also.<br><br><b>Coming Soon for Mobile Devices</b><br><br><b>For Laptop or PC:</b><br>Recommended Version: Windows 10 or later and Chrome Version 122 or later.<br><br><b>For Tablets:</b><br>Recommended Version: iPadOS 17 or later, One UI 6 or later, Android 15 or later.<br><br>This is done on experimental basis and will be improved over a period of time. Kindly ignore the errors if any.<br>Last reviewed and updated in: <b>October 2026</b><br><br>Toll-free Number: <b>1947</b><br>Email: <b>support.govone2026@gmail.com</b><div class="v36-partners"><span class="v36-partner-label">Translation Partner: <img src="google-logo.png" alt="Google"></span><span class="v36-partner-label">Media Partner: <img src="toi-logo.png" alt="Times of India"></span></div></footer>
+    <div id="vio-backdrop" class="vio-backdrop"></div>
+    <aside id="vio-panel" class="vio-panel" aria-hidden="true"><div class="vio-panel-head"><span class="vio-circle"><img src="vio-ai-logo.png" alt="Vio AI"></span><strong>Vio AI</strong><button id="vio-close" class="close" aria-label="Close Vio AI">×</button></div><p class="vio-coming-soon">Coming Soon</p><div class="vio-chat"><div class="vio-chat-messages"></div><div class="vio-chat-input"><input placeholder="Ask Vio AI..." disabled><button class="vio-send" disabled aria-label="Send"><i class="fa fa-paper-plane"></i></button></div></div><div class="vio-chat-controls"><button class="vio-ctrl" disabled aria-label="Voice input"><i class="fa fa-microphone"></i></button><button class="vio-ctrl" disabled aria-label="Attach file"><i class="fa fa-paperclip"></i></button><button class="vio-ctrl" disabled aria-label="Regenerate"><i class="fa fa-arrows-rotate"></i></button><button class="vio-ctrl" disabled aria-label="Clear chat"><i class="fa fa-trash"></i></button></div></aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
